@@ -1,0 +1,174 @@
+\chapter{Mathematischer Rahmen I}
+\begin{center}
+    {\textbf{Die dreidimensionale Resonanzformulierung}}
+\end{center}
+\label{chap:mathematischer_rahmen_I}
+
+\section{Einleitender Ansatz}
+
+Das klassische
+\textbf{Doppelspaltexperiment}
+zeigt, dass die Trennung von Welle und Teilchen
+keine physikalische Grundlage besitzt, sondern eine Folge unserer Beobachtung ist.
+Wird die Beobachtungsebene selbst Teil der Betrachtung,
+so zeigt sich, dass jedes Teilchenverhalten durch eine überlagerte Welle beschrieben werden kann.
+Daraus ergibt sich die Annahme, dass Teilchen nichts anderes sind
+als stabile Resonanzknoten solcher überlagerter Wellen,
+deren Energieverteilung sich exponentiell in drei Dimensionen fortsetzt.
+Jede dieser Überlagerungen bildet einen Knotenpunkt,
+an dem sich Energie räumlich konzentriert. Dieser Knoten entspricht dem realen, beobachtbaren Teilchen.
+\\
+\begin{center}
+    {\large\textbf{Mathematische Einschränkungen}}
+\end{center}
+
+Zur Beschreibung dieses Phänomens darf keine zweidimensionale Projektion mehr verwendet werden.
+Jede Flächenbeschreibung (Kreise, Winkel, $\pi$-Bezüge)
+reduziert den Raum auf eine irrationale Näherung, die keine physikalische Existenz besitzt.
+Gesucht ist daher eine Operatorform,
+die Raum, Energie und Zeit vollständig rational in drei Dimensionen verbindet.
+Damit wird aus der Geometrie der Fläche eine Geometrie des Volumens,
+deren Eigenschaften sich durch reale Messwerte bestätigen lassen müssen.
+
+\section{Probleme zweidimensionaler Projektionen in der Physik}
+
+Viele etablierte Gleichungen der Physik – insbesondere die Wellengleichung in ihrer Standardform –
+setzen implizit eine zweidimensionale Geometrie voraus:
+\[
+\frac{\partial^2 \Psi}{\partial x^2} +
+\frac{\partial^2 \Psi}{\partial y^2} = -k^2 \Psi.
+\]
+Diese Form beschreibt eine stehende Welle in einer Ebene,
+nicht im realen Raum.
+\newpage
+\noindent
+Die Erweiterung auf drei Dimensionen durch bloße Summation
+\[
+\nabla^2 \Psi =
+\frac{\partial^2 \Psi}{\partial x^2} +
+\frac{\partial^2 \Psi}{\partial y^2} +
+\frac{\partial^2 \Psi}{\partial z^2}
+\]
+ändert daran nichts Wesentliches,
+da sie den Raum als additive Kombination von Flächen behandelt.
+Erst wenn der Operator selbst räumlich gekoppelt ist,
+kann er reale Resonanzverhältnisse abbilden.
+
+\section{Herleitung des Resonanzoperators}
+
+Der Ausgangspunkt ist die klassische Wellengleichung
+\[
+\nabla^2 \Psi = \frac{1}{c^2} \frac{\partial^2 \Psi}{\partial t^2},
+\]
+die die zeitliche Ausbreitung einer Welle mit der räumlichen Krümmung ihres Feldes verknüpft.
+Für stationäre Zustände der Energie gilt, dass sich die zeitliche Ableitung
+als harmonische Oszillation der Form
+\[
+\Psi(\mathbf{x},t) = \psi(\mathbf{x}) e^{i\omega t}
+\]
+darstellen lässt.
+Setzt man diesen Ausdruck in die Wellengleichung ein, ergibt sich nach Kürzung des Zeitfaktors
+\[
+\nabla^2 \psi + \frac{\omega^2}{c^2}\psi = 0.
+\]
+Dies ist die Helmholtz-Gleichung in ihrer Grundform.
+Die auftretende Konstante
+\[
+k = \frac{\omega}{c}
+\]
+beschreibt hier keine klassische Wellenzahl im Sinne einer 2D-Projektion,
+sondern das Verhältnis zwischen Energie und zeitlicher Resonanzfrequenz.
+Damit kann man den allgemeinen Resonanzoperator definieren als
+\[
+\hat{R} = \nabla^2 + k^2,
+\]
+wobei $\hat{R}\psi = 0$ den stationären Zustand des Raumes beschreibt.
+Dieser Operator verknüpft Raum und Zeit zu einer messbaren geometrischen Einheit
+und wird in der Energie-Resonanz-Theorie als \emph{Raumresonanzoperator} bezeichnet.
+
+\paragraph{Eigenschaften des Operators.}
+Damit $\hat{R}$ eine reale, physikalische Bedeutung besitzt, muss er:
+\begin{enumerate}
+    \item \textbf{linear} sein, um Überlagerungen (Superposition) zuzulassen,
+    \item \textbf{selbstadjungiert} sein, damit die Eigenwerte reell und beobachtbar bleiben,
+    \item \textbf{räumlich symmetrisch} sein, um isotrope Resonanzen zu gewährleisten.
+\end{enumerate}
+Diese Eigenschaften führen zwingend dazu, dass nur reale, messbare Zustände
+in der Lösungsmannigfaltigkeit vorkommen – die Theorie bleibt damit
+vollständig empirisch anschlussfähig.
+
+\section{Die drei Dimensionen der Realität}
+
+In einem realen Resonanzraum existieren zu jeder Richtung zwei entgegengesetzte Ausbreitungsrichtungen.
+Diese Dualität kann als Spiegelung der Energieflüsse verstanden werden.
+Damit beschreibt der Laplace-Operator keine Summe unabhängiger Richtungen,
+sondern eine gekoppelte Struktur:
+\[
+\nabla^2 \Psi =
+\frac{\partial^2 \Psi}{\partial x_+^2} +
+\frac{\partial^2 \Psi}{\partial x_-^2} +
+\frac{\partial^2 \Psi}{\partial y_+^2} +
+\frac{\partial^2 \Psi}{\partial y_-^2} +
+\frac{\partial^2 \Psi}{\partial z_+^2} +
+\frac{\partial^2 \Psi}{\partial z_-^2}.
+\]
+Hierbei stehen $(x_+,x_-)$, $(y_+,y_-)$ und $(z_+,z_-)$
+für die dualen Ausbreitungsrichtungen der Raumdimensionen.
+Diese Symmetrie beschreibt erstmals ein \emph{physikalisch geschlossenes Raumfeld},
+in dem sich Energie als stehende dreidimensionale Welle stabilisiert.
+
+\section{Robin-Randbedingungen als physikalische Kopplung}
+
+An der Grenze eines Resonanzraumes darf Energie weder verloren gehen noch reflektionsfrei entweichen.
+Diese Bedingung wird durch die Robin-Randbedingung erfüllt:
+\[
+\frac{\partial \Psi}{\partial n} + \beta \Psi = 0,
+\]
+wobei der Parameter $\beta$ die Stärke der Kopplung zwischen Innen- und Außenraum beschreibt.
+Der Term $\partial_n \Psi$ steht für den Energiefluss über die Raumgrenze,
+$\beta \Psi$ für die Rückwirkung des umgebenden Resonanzfeldes.
+Gemeinsam bilden beide Terme die physikalisch reale Stabilisierung eines Resonanzvolumens.
+
+\section{Das entstehende Eigenwertproblem}
+
+Wird der Operator $\hat{R}$ unter den Robin-Bedingungen gelöst,
+so entsteht ein Eigenwertproblem der Form
+\[
+\hat{R}\Psi_i = \lambda_i \Psi_i,
+\]
+mit
+\[
+\nabla^2 \Psi_i + k_i^2 \Psi_i = 0, \quad
+\frac{\partial \Psi_i}{\partial n} + \beta \Psi_i = 0.
+\]
+Die Eigenwerte $k_i$ repräsentieren die diskreten Resonanzzustände des Raumes.
+Jeder Eigenwert steht für ein stabil existierendes Energieverhältnis,
+das im physikalischen Raum beobachtbar sein muss.
+
+\newpage
+
+\subsection{Emergente Symmetrie der dreidimensionalen Randbedingung}
+
+Die duale Robin-Randbedingung erzwingt,
+dass jede Welle sich in beiden Richtungen
+entlang jeder Raumachse ausbreitet.
+Damit entstehen \(2^3 = 8\)
+mögliche Überlagerungsrichtungen.
+Diese bilden die kleinstmögliche stabile
+Resonanzeinheit der dreidimensionalen Geometrie.
+
+Das resultierende 8er-Raster
+beschreibt die räumliche Diskretisierung,
+die im folgenden Kapitel
+zur numerischen Überprüfung herangezogen wird.
+
+\section{Überleitung zum numerischen Experiment}
+
+Das genannte Eigenwertproblem liefert die Grundlage für den empirischen Abgleich.
+Durch numerische Lösung der Gleichung für verschiedene Randbedingungen
+kann das Spektrum der Eigenwerte bestimmt werden.
+Der folgende Schritt besteht darin,
+diese berechneten Eigenwerte mit beobachtbaren Größen zu vergleichen
+und nach einem konstanten Verhältnis zu suchen,
+das alle Skalen miteinander verbindet.
+

@@ -1,0 +1,38 @@
+% Einfache, saubere Makros
+\newcommand{\alphastar}{\ensuremath{\alpha^{\ast}}}
+\newcommand{\ERTh}{Energie-Resonanz-Theorie}
+\newcommand{\helm}{Helmholtz-Gleichung}
+\newcommand{\robin}{Robin-Randbedingung}
+
+% Vektor/Laplace etc. (falls physics nicht genutzt wird)
+% \newcommand{\laplace}{\nabla^2}
+
+% Einheiten-Kürzel
+\newcommand{\GB}{\ensuremath{\,\mathrm{GB}}}
+\newcommand{\EB}{\ensuremath{\,\mathrm{EB}}}
+
+% Abstract-Umgebung für scrbook definieren
+\providecommand{\abstractname}{Zusammenfassung}
+\makeatletter
+\newenvironment{abstract}{%
+  \cleardoublepage
+  \chapter*{\abstractname}%
+  \addcontentsline{toc}{chapter}{\abstractname}%
+  \markboth{\abstractname}{\abstractname}%
+}{\par}
+\makeatother
+
+% Lockerere Float-Regeln
+\makeatletter
+\renewcommand{\topfraction}{0.95}      % Anteil oben: bis 95% Float erlaubt
+\renewcommand{\bottomfraction}{0.95}   % Anteil unten: bis 95% Float
+\renewcommand{\textfraction}{0.01}     % Mindesttextanteil auf Seite: nur 5%
+\renewcommand{\floatpagefraction}{0.5}
+\setcounter{topnumber}{3}              % max. Floats oben
+\setcounter{bottomnumber}{2}           % max. Floats unten
+\setcounter{totalnumber}{5}            % max. Floats gesamt pro Seite
+\makeatother
+
+% (optional, für engere Abstände)
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}

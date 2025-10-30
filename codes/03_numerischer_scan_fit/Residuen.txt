@@ -1,0 +1,10 @@
+RES = [
+    ("H_ionization_eV",   11.542064),
+    ("H_Ly_alpha_eV",      8.652921),
+    ("H_Halpha_eV",        1.602487),
+    ("CMB_kBT_eV",         6.527567),
+    ("CMB_delta_T_eV",     0.277979),
+    ("Deuteron_binding_eV",0.014060),
+    ("He4_binding_eV",     0.178843),
+    ("Proton_rest_eV",     5.930366),
+]
