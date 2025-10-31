@@ -91,4 +91,4 @@ Bitte zitiere diese Arbeit wie folgt:
 
 Trümpert, S. (2025). Die Energie-Resonanz-Theorie (ERT):
 Eine neue Perspektive auf Raum, Resonanz und Struktur.
-Zenodo. DOI: [wird ergänzt]
+Zenodo. DOI: [![DOI](https://zenodo.org/badge/1086375271.svg)](https://doi.org/10.5281/zenodo.17494233)
