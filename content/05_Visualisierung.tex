@@ -21,7 +21,7 @@ Dazu werden zwei Werkzeuge eingesetzt:
         diskreten kartesischen Gitter berechnet, die Werte auf den Bereich
         $[0,1]$ normalisiert und als Voxel-Datensatz im \texttt{.vti}-Format
         abspeichert;
-  \item \textbf{ParaView} als dreidimensionaler Renderingraum, in dem die
+  \item \textbf{\gls{paraview}} als dreidimensionaler Renderingraum, in dem die
         Volumendaten visuell analysiert und farbcodiert dargestellt werden.
 \end{itemize}
 
@@ -105,15 +105,15 @@ im Rahmen der Energieresonanz-Theorie.
 
 
 
-\subsection{Normalisierung und Wahrnehmung}
+\subsection{\gls{normalisierung} und Wahrnehmung}
 
 Vor der Visualisierung wird das berechnete Volumen auf den Wertebereich $[0,1]$
 normalisiert:
 \[
 F_\text{norm} = \frac{F - F_\text{min}}{F_\text{max} - F_\text{min}}.
 \]
-Diese Normalisierung ist notwendig, um sowohl in der Visualisierung
-(ParaView) als auch in der Wahrnehmung des Beobachters
+Diese \gls{normalisierung} ist notwendig, um sowohl in der Visualisierung
+(\gls{paraview}) als auch in der Wahrnehmung des Beobachters
 eine konsistente Interpretation zu ermöglichen.
 Sie entspricht der optischen Kalibrierung eines realen Sensors.
 
@@ -121,11 +121,11 @@ Sie entspricht der optischen Kalibrierung eines realen Sensors.
 
 Das in diesem Abschnitt verwendete Skript \texttt{generator\_final.py} bildet den Kern des numerischen Versuchs. Es erzeugt sämtliche Volumendaten (\texttt{.vti}-Dateien) des Experiments — \textit{Proton}, \textit{H}, \textit{H\textsubscript{2}}, \textit{O} und \textit{H\textsubscript{2}O} — ausschließlich auf Grundlage der Spiralis-Funktion. Der Code generiert diese Volumen hierarchisch und gekoppelt, sodass jede Stufe die energetische Überlagerung der vorhergehenden beschreibt.
 
-Das Skript folgt der in Kapitel~2 eingeführten Helmholtz-Gleichung mit Robin-Randbedingungen und verwendet die in Kapitel~4 definierte Operatorstruktur \(\alpha^*\) als numerischen Parameter. Die Feldwerte werden auf einem kartesischen Gitter normalisiert und nach der Relation
+Das Skript folgt der in Kapitel~2 eingeführten \gls{helmholtz} mit Robin-Randbedingungen und verwendet die in Kapitel~4 definierte Operatorstruktur \(\alpha^*\) als numerischen Parameter. Die Feldwerte werden auf einem kartesischen Gitter normalisiert und nach der Relation
 \[
 \Psi(x,y,z) = \sin\!\bigl(\alpha^*(x+y+z)\bigr)
 \]
-berechnet. Die resultierende dreidimensionale Energiedichte wird in \texttt{.vti}-Dateien gespeichert und anschließend mit ParaView volumetrisch dargestellt.
+berechnet. Die resultierende dreidimensionale Energiedichte wird in \texttt{.vti}-Dateien gespeichert und anschließend mit \gls{paraview} volumetrisch dargestellt.
 
 Der hierarchische Aufbau folgt den Resonanzstufen:
 \begin{itemize}
@@ -142,9 +142,9 @@ Alle Simulationen erfolgen im selben Koordinatenrahmen, identischer Auflösung u
 
 \section{Ergebnisse und Beobachtungen}
 In diesem Abschnitt werden die visuellen Ergebnisse des numerischen Experiments vorgestellt und in ihrer hierarchischen Abfolge analysiert.
-Jede Visualisierung basiert auf der identischen numerischen Basis der Spiralis-Funktion und unterscheidet sich ausschließlich durch den hierarchischen Kopplungsgrad der Resonanz. 
+Jede Visualisierung basiert auf der identischen numerischen Basis der Spiralis-Funktion und unterscheidet sich ausschließlich durch den hierarchischen Kopplungsgrad der \gls{resonanz}. 
 Die verwendete \textit{EM-Colormap} bildet dabei das wahrnehmbare elektromagnetische Spektrum ab und erlaubt eine unmittelbare Zuordnung zwischen mathematischem Feld und menschlicher Farbwahrnehmung. 
-Die Kameraposition, Auflösung und Normalisierung bleiben über alle Datensätze hinweg konstant, um eine vergleichbare Darstellung der energetischen Geometrien zu gewährleisten.
+Die Kameraposition, Auflösung und \gls{normalisierung} bleiben über alle Datensätze hinweg konstant, um eine vergleichbare Darstellung der energetischen Geometrien zu gewährleisten.
 \\
 \\
 Die jeweilige .vti-Datei wird in Paraview geladen, als Volume dargestellt und nutzt die Colormap als Farbgebung der Energieverteilung.

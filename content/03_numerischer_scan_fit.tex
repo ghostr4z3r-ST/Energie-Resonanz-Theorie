@@ -14,11 +14,11 @@ Sie sind so gestaltet, dass jedes Ergebnis durch erneute Ausführung reproduzier
 
 \section{Grundidee des numerischen Ansatzes}
 
-Die dreidimensionale Helmholtz-Gleichung
+Die dreidimensionale \gls{helmholtz}
 \[
   \nabla^2 \psi + k^2 \psi = 0
 \]
-wird hier mit einer symmetrischen Robin-Randbedingung
+wird hier mit einer symmetrischen \gls{robin}
 \[
   \frac{\partial \psi}{\partial n} + \beta \psi = 0
 \]
@@ -76,7 +76,7 @@ Diese Werte werden als Referenzen in die nächste Phase übergeben
   \centering
   \includegraphics[width=0.85\textwidth]{03_numerischer_scan_fit/operator_fit.jpg}
   \caption{Globaler Fit über alle Skalen. Das numerische Minimum markiert
-  den gemeinsamen Operator $\alpha^*$.}
+  den gemeinsamen Operator \gls{alpha-star}.}
   \label{fig:fit_operator}
 \end{figure}
 
@@ -86,7 +86,7 @@ Diese Werte werden als Referenzen in die nächste Phase übergeben
 In der zweiten Phase (\texttt{operator\_fit.py}) wird geprüft, ob zwischen
 den in Phase~1 gefundenen Referenzen ein gemeinsamer Operator existiert.
 \\
-Dieser Operator wird im folgenden explizit als $\alpha^*$ bezeichnet.
+Dieser Operator wird im folgenden explizit als \gls{alpha-star} bezeichnet.
 \\
 Hierzu wird ein globaler Fit über alle Skalen durchgeführt,
 dessen Ziel die Minimierung der kombinierten Residuenfunktion ist:
@@ -94,7 +94,7 @@ dessen Ziel die Minimierung der kombinierten Residuenfunktion ist:
   \mathcal{L}(\beta)
   = \sum_i \varepsilon_i(\beta).
 \]
-Das Minimum dieser Funktion ergibt den numerisch stabilsten Operator $\alpha^*$.
+Das Minimum dieser Funktion ergibt den numerisch stabilsten Operator \gls{alpha-star}.
 In der Auswertung liegt das globale Minimum bei
 \[
   \alpha^* = 9{,}43034098~\si{\electronvolt},
@@ -126,7 +126,7 @@ Präzision und liefert eine mittlere Fehlerabweichung von
 \section{Interpretation}
 
 Das numerische Verfahren zeigt, dass ein einzelner Operatorwert
-$\alpha^*$ die gemessenen Energien über drei Größenordnungen hinweg
+\gls{alpha-star} die gemessenen Energien über drei Größenordnungen hinweg
 konsistent beschreibt.  
 Er tritt dabei nicht als willkürlicher Fitparameter auf, sondern als stabiler
 Eigenwert eines dreidimensionalen Resonanzproblems.
