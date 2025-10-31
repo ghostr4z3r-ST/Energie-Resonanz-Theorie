@@ -1,0 +1,12 @@
+# Normalize line endings
+* text=auto eol=lf
+
+# Handle LaTeX and TeX files as UTF-8
+*.tex text working-tree-encoding=UTF-8
+*.bib text working-tree-encoding=UTF-8
+*.py text working-tree-encoding=UTF-8
+
+# Prevent binary diffs for large files
+*.vti binary
+*.jpg binary
+*.zip binary

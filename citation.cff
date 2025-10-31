@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Wenn Sie diese Arbeit verwenden, zitieren Sie bitte wie folgt."
+authors:
+  - family-names: "Trümpert"
+    given-names: "Steven"
+title: "Die Energie-Resonanz-Theorie (ERT)"
+version: "1.0"
+doi: "wird ergänzt"
+date-released: "2025-10-30"
+license: "CC-BY-NC-SA-4.0"
+repository-code: "https://github.com/ghost47a-ST/Energie-Resonanz-Theorie"
+abstract: >
+  Dieses Repository enthält das vollständige wissenschaftliche Manuskript
+  und alle experimentellen Daten zur Energie-Resonanz-Theorie (ERT).
