@@ -3,38 +3,11 @@
 % Eingelagerte Präambel
 \input{preamble/packages}
 \input{preamble/macros}
-\input{preamble/theoremstyles}
 \input{preamble/glossaries}
-%\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{amsmath,amssymb}
-\usepackage{placeins}
-
-
-\lstdefinestyle{ERTlisting}{
-  language=Python,
-  basicstyle=\ttfamily\footnotesize,
-  breaklines=true,
-  columns=fullflexible,
-  showstringspaces=false,
-  frame=single
-}
-
-\lstset{
-  style=ERTlisting,
-  inputencoding=utf8,
-  literate=
-    {ä}{{\"a}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
-    {Ä}{{\"A}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
-    {ß}{{\ss}}1
-    {–}{{-}}1 {—}{{-}}1
-}
-
-\usepackage{graphicx}
-\graphicspath{{Grafiken/}}
 
 \begin{document}
+
+% Titelseite
 \begin{titlepage}
     \thispagestyle{empty}
     \centering
@@ -46,28 +19,35 @@
     \vspace{0.6cm}
     {\large \today\par}
     \vspace{3.0cm}
-    \includegraphics[width=.80\textwidth]{Front.jpg}
+    \includegraphics[width=0.8\textwidth]{Front.jpg}
     \vfill
 \end{titlepage}
 
+% Abstract & Inhaltsverzeichnis
 \begin{abstract}
 \input{content/00_abstract}
 \end{abstract}
 \tableofcontents
 
+% Hauptteil
 \mainmatter
 \input{content/01_einleitung}
 \input{content/02_mathematischer_rahmen_I}
-\input{content/03_Numerischer_scan_fit}
+\input{content/03_numerischer_scan_fit}
 \input{content/04_mathematischer_rahmen_II}
-\input{content/05_Visualisierung}
-\input{content/06_Energie_Resonanz_Theorie}
-\input{content/07_Naturwissenschaften}
-\input{content/08_Vorhersagen}
-\input{content/09_Ausblick}
-\input{content/10_Nachwort}
-\appendix
-\include{content/Literaturverzeichnis}
+\input{content/05_visualisierung}
+\input{content/06_energie_resonanz_theorie}
+\input{content/07_naturwissenschaften}
+\input{content/08_vorhersagen}
+\input{content/09_ausblick}
+\input{content/10_nachwort}
 
+% Anhang, Glossar, Bibliographie
+\appendix
+\input{content/anhang_daten}
+\glsaddall
+\printglossaries
+\nocite{*}
+\printbibliography
 
 \end{document}

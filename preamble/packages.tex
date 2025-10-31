@@ -2,21 +2,25 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage{lmodern}
-\usepackage{microtype}
-\usepackage{csquotes}
-\usepackage{changepage}
-\usepackage{listings}
-\usepackage{listingsutf8}
+\usepackage{lmodern}		% bessere Schrift
+\usepackage{microtype}		% typografische Feinoptimierung
+\usepackage{csquotes}		% Anführungszeichen ""
+\usepackage{changepage}		
 
 % Mathe & Physik
 \usepackage{amsmath, amssymb, amsthm, tcolorbox}
-\usepackage{siunitx}     % \SI{...}{...}
+\usepackage{siunitx}     							
 \sisetup{locale=DE, per-mode=symbol}
-\usepackage{physics}     % \dv, \grad, \laplacian etc. (optional)
+\usepackage{physics}     							
+\usepackage{xcolor}
 
 % Grafik, Tabellen
 \usepackage{graphicx}
+\graphicspath{
+	{Grafiken/}
+	{Grafiken/03_numerischer_scan_fit/}
+	{Grafiken/05_Visualisierung/}	
+}
 \usepackage{subcaption}
 \usepackage{booktabs}
 \usepackage{array}
@@ -26,33 +30,24 @@
 
 % Referenzen/Links
 \usepackage[hidelinks]{hyperref}
-\usepackage[capitalise,noabbrev]{cleveref}
+\usepackage[nameinlink, capitalise, noabbrev]{cleveref}
 
-% Code-Listings (ohne shell-escape)
-\usepackage{listings}
-\lstset{
-  basicstyle=\ttfamily\small,
-  frame=single,
-  numbers=left,
-  numberstyle=\tiny,
-  breaklines=true,
-  tabsize=2,
-  language=Python
-}
 
 % Bibliographie
 \usepackage[
   backend=biber,
   style=authoryear,
   giveninits=true,
-  maxcitenames=2, maxbibnames=20,
-  uniquename=false, sorting=nyt,
-  doi=false, isbn=false, url=false
+  maxcitenames=2,
+  maxbibnames=20,  
+  uniquename=false,
+  sorting=nyt,
+  doi=false,
+  isbn=false,
+  url=false
 ]{biblatex}
-
 \addbibresource{bib/references.bib}
 
-% --- Glossar ---
-%\usepackage{glossaries-extra}
-%\setabbreviationstyle[acronym]{long-short}
-%\makeglossaries
+% Glossar
+\usepackage[acronym, nonumberlist, toc]{glossaries}
+\makeglossaries

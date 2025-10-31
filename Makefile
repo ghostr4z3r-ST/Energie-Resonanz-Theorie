@@ -1,11 +1,13 @@
-all: pdf
+PDF=main.pdf
+TEX=main.tex
+
+all:pdf
 
 pdf:
-	latexmk -pdf main.tex
-
+	latexmk -pdf -interaction=nonstopmode - halt-on-error $(TEX)
+	
 clean:
 	latexmk -C
-	rm -f *.run.xml *.bcf
-
-watch:
-	latexmk -pvc -pdf main.tex
+	rm -f $(PDF)
+	
+.PHONX: all pdf clean

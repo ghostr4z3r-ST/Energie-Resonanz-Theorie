@@ -1,0 +1,156 @@
+
+% - Benutzung im Text:
+%   \gls{alpha-star}, \Gls{spiralis}, \acrshort{ERT}, \acrlong{ART} etc.
+
+% Haupt-Begriffe
+
+\newglossaryentry{alpha-star}{%
+  name={\ensuremath{\alpha^\star}},
+  sort={alpha-star},
+  text={\ensuremath{\alpha^\star}},
+  description={%
+    Dimensionsloser Operator der Energie–Zeit–Abweichung zur idealen Periode; in der ERT der \emph{Öffnungswinkel} der realen Spiraldynamik. %
+    \ensuremath{\alpha^\star} legt die aperiodische Phasenverschiebung fest und bestimmt damit Resonanz, Skalenkopplung und Wahrnehmungsrahmen.},
+  plural={\ensuremath{\alpha^\star}}%
+}
+
+\newglossaryentry{spiralis}{%
+  name={Spiralis},
+  sort={spiralis},
+  description={%
+    Erweiterung der Sinusfunktion zur \emph{dreidimensionalen, aperiodischen} Felddynamik. %
+    Die Spiralis erzeugt aus drei dualen Raumrichtungen ein fraktales, resonantes Feld, dessen Zeitverlauf als geometrische Folge erscheint.},
+  plural={Spirales}%
+}
+
+\newglossaryentry{aperiodizitaet}{%
+  name={Aperiodizität},
+  sort={aperiodizitaet},
+  description={%
+    Abwesenheit exakter Wiederkehr. In der ERT ist Aperiodizität eine essentielle Eigenschaft realer Dynamik: %
+    Umlaufbahnen, Energieflüsse und Kopplungen schließen nicht exakt, sondern nähern sich asymptotisch periodischen Mustern an.}%
+}
+
+\newglossaryentry{resonanz}{%
+  name={Resonanz},
+  sort={resonanz},
+  description={%
+    Überlagerung kohärenter Wellenanteile mit Stabilisierung bestimmter Strukturen (Knoten/Zonen). %
+    In der ERT entstehen so hierarchische Kopplungen (Proton $\rightarrow$ H $\rightarrow$ H$_2$ $\rightarrow$ H$^2$O).}%
+}
+
+\newglossaryentry{helmholtz}{%
+  name={Helmholtz-Gleichung},
+  sort={helmholtz},
+  description={%
+    Partielle Differentialgleichung, die stationäre Wellenfelder beschreibt. %
+    In der ERT dient sie als Ausgangspunkt für das Eigenwertproblem im dreidimensionalen Randwert-Setup.}%
+}
+
+\newglossaryentry{robin}{%
+  name={Robin-Randbedingung},
+  sort={robin},
+  description={%
+    Lineare Randbedingung der Form \ensuremath{a u + b\,\partial_n u = c} an der Grenze des Lösungsgebiets. %
+    In der ERT modelliert sie Energiefluss und Balance zwischen Feld und „Außenraum“.}%
+}
+
+\newglossaryentry{eigenwert}{%
+  name={Eigenwert/Eigenfunktion},
+  sort={eigenwert},
+  description={%
+    Spektralbegriffe des Randwertproblems: Eigenwerte quantisieren zulässige Feldmodi; Eigenfunktionen sind die zugehörigen räumlichen Muster. %
+    Der numerische Scan/ Fit der ERT identifiziert ein konsistentes Spektralsignal für \gls{alpha-star}.}%
+}
+
+\newglossaryentry{wahrnehmungsrahmen}{%
+  name={Wahrnehmungsrahmen},
+  sort={wahrnehmungsrahmen},
+  description={%
+    Effektive, periodische Maske menschlicher Messung und Erfahrung. %
+    In der ERT wird Zeit als aus dem Feld emergierende Geometrie verstanden; der Wahrnehmungsrahmen begrenzt Sichtbarkeit (z.\,B. Lichtgeschwindigkeit, EM-Spektrum).}%
+}
+
+\newglossaryentry{dualitaet}{%
+  name={Dualität (Richtungen)},
+  sort={dualitaet},
+  description={%
+    Jede Raumdimension besitzt zwei Richtungen; Negativität wird nicht benötigt. %
+    Die dreifache Dualität erzeugt acht erste Überlagerungspunkte (Ecken eines Würfels) als elementare Resonanzstruktur.}%
+}
+
+\newglossaryentry{achter-raster}{%
+  name={8er-Raster},
+  sort={achter-raster},
+  description={%
+    Diskretisierung entlang der acht kubischen Richtungen. %
+    Dient im ERT-Scan als minimaler symmetrischer Suchraum, in dem Resonanzknoten zuverlässig detektierbar werden.}%
+}
+
+\newglossaryentry{hierarchie}{%
+  name={Diadische Hierarchie},
+  sort={hierarchie},
+  description={%
+    Skalierung/Einbettung von Resonanzknoten über Faktoren von zwei und acht, wodurch fraktale, selbstähnliche Strukturen über Skalen hinweg entstehen.}%
+}
+
+\newglossaryentry{normalisierung}{%
+  name={Normalisierung (Datenbereich)},
+  sort={normalisierung},
+  description={%
+    Abbildung der berechneten Felder auf \([0,1]\) zur Visualisierung. %
+    Der Punkt \mbox{\(0{,}5\)} markiert die Wahrnehmungsnull (Raum), während \(\,1-\alpha^\star/10\,\) die sichtbare Informationsgrenze setzt.}%
+}
+
+\newglossaryentry{em-colormap}{%
+  name={EM-Colormap (ERT)},
+  sort={em-colormap},
+  description={%
+    Farbcodierung, die das sichtbare Spektrum (Violett\,$\to$\,Weiß) in Einklang mit \gls{alpha-star} abbildet, inkl.\ UV/IR-Interpretation als „Rand“-Informationen des Wahrnehmungsfensters.}%
+}
+
+\newglossaryentry{vti}{%
+  name={VTI-Volumen},
+  sort={vti},
+  description={%
+    VTK ImageData-Dateiformat für reguläre Gitter (ParaView-kompatibel), genutzt zur Speicherung der berechneten ERT-Felder (z.\,B. Proton, H, H$_2$, O, H$^2$O).}%
+}
+
+\newglossaryentry{paraview}{%
+  name={ParaView},
+  sort={paraview},
+  description={%
+    Open-Source-Werkzeug zur Volumenvisualisierung. %
+    In der ERT dient ParaView als experimentelle Bühne zur Sichtbarmachung der Spiralis-Felder und ihrer Hierarchien.}%
+}
+
+\newglossaryentry{residuum}{%
+  name={Residuum/Residuen-Fit},
+  sort={residuum},
+  description={%
+    Maß für Abweichungen zwischen Modell und Daten; in der ERT zur Verifikation von \gls{alpha-star} über Skalen (atomar, kosmologisch) eingesetzt.}%
+}
+
+\newglossaryentry{wahrnehmungsfilter}{%
+  name={Wahrnehmungsfilter (UV/IR)},
+  sort={wahrnehmungsfilter},
+  description={%
+    Reduktion der Opazität außerhalb des sichtbaren Spektrums (UV, IR), um die strukturtragenden Bereiche der Felder klar erkennbar zu machen.}%
+}
+
+\newglossaryentry{zeit-als-geometrie}{%
+  name={Zeit als Geometrie},
+  sort={zeit-als-geometrie},
+  description={%
+    ERT-Kerngedanke: Zeit ist keine unabhängige Koordinate, sondern die emergente Folge des aperiodischen Spiralverlaufs im dreidimensionalen Feld.}%
+}
+
+% ---------- Akronyme ----------
+
+\newacronym{ERT}{ERT}{Energie-Resonanz-Theorie}
+\newacronym{ART}{ART}{Allgemeine Relativitätstheorie}
+\newacronym{QM}{QM}{Quantenmechanik}
+\newacronym{EM}{EM}{Elektromagnetisch / Elektromagnetisches Spektrum}
+\newacronym{CMB}{CMB}{Kosmische Mikrowellen-Hintergrundstrahlung}
+\newacronym{VTK}{VTK}{Visualization Toolkit (Dateiformate/IO)}
+\newacronym{DOI}{DOI}{Digital Object Identifier}

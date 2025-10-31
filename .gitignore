@@ -1,3 +1,4 @@
+#LaTeX
 *.aux
 *.log
 *.bbl
@@ -8,4 +9,35 @@
 *.lof
 *.lot
 *.out
+
+#Build-Verzeichnisse
 _build/
+build/
+paper/build/
+paper/output/
+
+#OS / Editor
+.DS_Store 
+Thumbs.db
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Paraview/Binaries
+*.vti
+*.vtk
+*.vtp
+*.pvsm
+*.png
+*.jpg
+*.jpeg
+*.mp4
+
+# Backup / Temp files
+*.bak
+*.tmp
+*.swp

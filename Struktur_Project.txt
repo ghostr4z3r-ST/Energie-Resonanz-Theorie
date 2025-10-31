@@ -1,0 +1,70 @@
+Energie-Resonanz-Theorie/
+	.gitignore
+	latexmkrc
+	main.tex
+	Makefile
+	README.md
+	%.git%/					# Versteckter githubordner
+	bib/
+		local.bib
+		references.bib
+	codes/
+		03_numerischer_scan_fit/
+			ert_dataset.py
+			ert_operator_scan.py
+			operator_fit.py
+			Residuen.txt
+			scan_2.py
+		05_Visualisierung/
+			Paraview/
+				ERT_EM_Colormap.json
+			Python/
+				generator_final.py
+	content/
+		00_abstract.tex
+		01_Einleitung.tex
+		02_mathematischer_rahmen_I.tex
+		03_numerischer_scan_fit.tex
+		04_mathematischer_rahmen_II.tex
+		05_Visualisierung.tex
+		06_Energie_Resonanz_Theorie.tex
+		07_Naturwissenschaften.tex
+		08_Vorhersagen.tex
+		09_Ausblick.tex
+		10_Nachwort.tex
+		anhang_daten.tex
+	data/
+		Vti_samples/
+			H.vti
+			H2.vti
+			H2O.vti
+			oxygen.vti
+			proton.vti
+	Grafiken/
+		Front.jpg
+		Wechselspannung.jpg
+		03_numerischer_scan_fit/
+			operator_fit.jpg
+			scan1.jpg
+			scan2.jpg
+		05_Visualisierung/
+			H/
+				H_Volume_XYZ_Cam.jpeg
+			H2/
+				H2_Volume_XYZ_Cam.jpeg
+			H2O/
+				H20_Volume_XYZ_Cam.jpeg
+			O/
+				O_Volume_XYZ_Cam.jpeg
+			Proton/
+				Proton_Volume_XYZ_Cam.jpeg
+	preamble/
+		glossaries.tex
+		macros.tex
+		packages.tex
+
+
+
+
+
+
